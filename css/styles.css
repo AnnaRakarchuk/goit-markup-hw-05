@@ -29,6 +29,9 @@
   --icon-main-color: #afb1b8;
   --icon-accent-cl: #2196f3;
   --icon-footer-color: #ffffff;
+
+  /*animation*/
+  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -115,6 +118,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-txt-cl);
+
+  transition: color var(--animation);
 }
 
 .link-logo {
@@ -183,6 +188,7 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--main-txt-cl);
+  transition: fill var(--animation);
 }
 .contacts-link:hover .icon-contacts,
 .contacts-link:focus .icon-contacts {
@@ -253,6 +259,8 @@ img {
   color: var(--secondary-txt-white);
   background-color: var(--bgd-button);
   cursor: pointer;
+
+  transition: background-color var(--animation);
 }
 
 .hero-btn:hover,
@@ -459,6 +467,8 @@ img {
   height: 44px;
   background-color: #ffffff;
   border-radius: 50%;
+
+  transition: background-color var(--animation), fill var(--animation);
 }
 
 .socials-link:hover,
@@ -496,6 +506,8 @@ img {
   height: 92px;
   border: 1px solid var(--icon-main-color);
   border-radius: 4px;
+
+  transition: border var(--animation);
 }
 .clients-link:hover,
 .clients-link:focus {
@@ -507,6 +519,8 @@ img {
 }
 .clients-icon {
   fill: var(--icon-main-color);
+
+  transition: fill var(--animation);
 }
 
 /*-----------------
@@ -540,6 +554,8 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-txt-white);
+
+  transition: color var(--animation);
 }
 .footer-address:hover,
 .footer-address:focus {
@@ -557,6 +573,8 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+
+  transition: color var(--animation);
 }
 .footer-contact-item:hover,
 .footer-contact-item:focus {
@@ -592,6 +610,8 @@ img {
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+
+  transition: background-color var(--animation);
 }
 .join-link:hover,
 .join-link:focus {
@@ -633,6 +653,8 @@ img {
   border: transparent;
   border-radius: 4px;
   cursor: pointer;
+
+  transition: background-color var(--animation), color var(--animation), box-shadow var(--animation);
 }
 
 .portfolio-btn:hover,
@@ -665,6 +687,8 @@ img {
   display: block;
   text-decoration: none;
   color: currentColor;
+
+  transition: box-shadow var(--animation);
 }
 .portfolio-link:hover,
 .portfolio-link:focus {
